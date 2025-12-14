@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Visualización Arquitectónica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: #0f0f0f;
+      color: #eaeaea;
+    }
+    header {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 2rem 3rem;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      color: #bdbdbd;
+      max-width: 720px;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .project {
+      background: #181818;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .project:hover {
+      transform: translateY(-6px);
+    }
+    .thumb {
+      height: 220px;
+      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      color: #777;
+    }
+    .info {
+      padding: 1.4rem 1.6rem 1.8rem;
+    }
+    .info h2 {
+      font-size: 1.2rem;
+      margin: 0 0 0.4rem;
+    }
+    .info p {
+      font-size: 0.95rem;
+      color: #cfcfcf;
+      line-height: 1.5;
+    }
+    footer {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+      border-top: 1px solid #222;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nicolás Encina</h1>
+    <p>
+      Visualización arquitectónica — imágenes realistas para proyectos residenciales y comerciales.
+      Especializado en materialidad, iluminación y atmósferas contemporáneas.
+    </p>
+  </header>
+
+  <main>
+    <!-- PROJECT 01 -->
+    <a href="vivienda-unifamiliar-visualizacion/index.html" class="project">
+      <div class="thumb">Imagen principal del proyecto</div>
+      <div class="info">
+        <h2>Vivienda unifamiliar</h2>
+        <p>Visualización arquitectónica de vivienda contemporánea en entorno natural.</p>
+      </div>
+    </a>
+
+    <!-- FUTURE PROJECT PLACEHOLDERS -->
+    <div class="project">
+      <div class="thumb">Próximo proyecto</div>
+      <div class="info">
+        <h2>Proyecto en preparación</h2>
+        <p>Visualización arquitectónica — próximamente.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="thumb">Próximo proyecto</div>
+      <div class="info">
+        <h2>Proyecto en preparación</h2>
+        <p>Visualización arquitectónica — próximamente.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 · Portfolio de visualización arquitectónica
+  </footer>
+
+</body>
+</html>

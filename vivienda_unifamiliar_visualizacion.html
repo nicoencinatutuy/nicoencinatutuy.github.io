@@ -11,13 +11,15 @@
       background: #0f0f0f;
       color: #eaeaea;
     }
+    /* Estilo para imágenes a pantalla completa (como la Hero) */
     .hero {
       width: 100%;
-      height: 100vh;
+      height: 100vh; /* Ocupa el alto total de la pantalla */
       background: #1a1a1a;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
     .hero img {
       width: 100%;
@@ -47,22 +49,7 @@
       margin-bottom: 4rem;
     }
 
-    /* --- IMAGEN EN PROPORCIÓN 16:9 --- */
-    .image-16-9 {
-      margin: 4rem 0;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      background: #1a1a1a;
-      overflow: hidden;
-    }
-    .image-16-9 img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* --- IMAGEN EN ALTO COMPLETO ORIGINAL --- */
+    /* Imagen que mantiene su alto original pero dentro del margen del texto */
     .image-full {
       margin: 4rem 0;
       width: 100%;
@@ -97,11 +84,6 @@
       desarrollado a partir de un diseño propio en colaboración.
     </p>
 
-    <p>
-      El foco del trabajo estuvo en la exploración de materialidad, iluminación natural y
-      relación con el entorno, buscando una imagen realista y atmosférica para presentación comercial.
-    </p>
-
     <div class="meta">
       <strong>Software:</strong> Sketchup · D5 Render<br />
       <strong>Rol:</strong> Modelado y visualización
@@ -111,14 +93,12 @@
       <img src="img/Escena05_01_chica.jpg" alt="Vista exterior completa">
     </div>
 
-    <div class="image-16-9">
-      <img src="img/Escena01_02_chica.jpg" alt="Vista exterior 16:9">
-    </div>
-
+  </section> <section class="hero">
+    <img src="img/Escena01_02_chica.jpg" alt="Vista exterior 100% ancho">
   </section>
 
   <footer>
-    © 2025 · Nicolas Encina Tutuy VizArq
+    © 2025 · Portfolio de visualización arquitectónica
   </footer>
 
 </body>
